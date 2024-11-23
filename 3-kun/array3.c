@@ -33,11 +33,11 @@ int main(){
         }
         
     }
-    
+
     
     for (int i = 0; i <= temp1; i++)
     {
         printf("%d",arr[i]);
     }
-    
+    return 0;
 }
