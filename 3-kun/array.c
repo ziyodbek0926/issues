@@ -1,5 +1,5 @@
+// Arrayda o'xshash elementlar
 #include <stdio.h>
-
 
 int main()
 {
