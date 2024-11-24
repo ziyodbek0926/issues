@@ -8,16 +8,13 @@ int main(){
 
     for (int i = 0; i < len; i++)
     {
-
         for (int j = i; j < len; j++)
         {
             if (arr[i] = arr[j])
             {
                 printf("array[%d]: %d = array[%d]: %d",i,arr[i],j,arr[j]);
-            }
-            
+            }   
         }
-        
     }
     return 0;
 

@@ -1,3 +1,4 @@
+// Bu funksiya katta harfdagi so'zlarni kichik harflarga o'girib beradi.
 char* toLowerCase(char* s){
 
     int i = 0;

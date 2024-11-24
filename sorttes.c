@@ -1,10 +1,10 @@
-// Sorting
+// kamayish tartibida sortlash
 
 #include <stdio.h>
 
 int main(){
     int arr[] = {2,4,1,5};
-    
+
     int len = sizeof(arr)/sizeof(arr[0]);
 
     for (int i = 0; i < len; i++)
@@ -12,7 +12,7 @@ int main(){
         for (int k = 0; k < len - 1; k++)
         {
             int temp = 0;
-            if (arr[i] < arr[k])
+            if (arr[i] > arr[k])
             {
                 temp = arr[i];
                 arr[i] = arr[k];
