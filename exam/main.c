@@ -2,21 +2,14 @@
 
 int main(){
 
-FILE *fptr;
+    FILE *fptr;
 
-// Open a file in read mode
-fptr = fopen("filename.txt", "r");
+    // Open a file in writing mode
+    fptr = fopen("filename.txt", "w");
 
-// Store the content of the file
-char myString[100];
+    // Write a string into the file
+    fputs("Hello World!", fptr);
 
-// Read the content and store it inside myString
-fgets(myString, 100, fptr);
-
-// Print the file content
-printf("%s", myString);
-
-// Close the file
-fclose(fptr);
+    fclose(fptr);
 }
 
