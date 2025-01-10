@@ -68,22 +68,22 @@
 #include <stdio.h>
 
 int main() {
-    int arr[50]; // Musbat sonlarni saqlash uchun massiv
-    int num;     // Foydalanuvchi kiritgan son
-    int z = 0;   // Massivga saqlangan sonlar soni
+    int arr[50]; 
+    int num;     
+    int z = 0;  
 
     for (int i = 0; i < 50; i++) {
-        if (scanf("%d", &num) != 1) { // Agar noto‘g‘ri kiritilgan qiymat bo‘lsa
+        if (scanf("%d", &num) != 1) { 
             printf("n/a\n");
-            return 0; // Dastur tugaydi
+            return 0;
         }
-        if (num == -1) {  // Agar -1 bo‘lsa, kiritishni to‘xtatish
+        if (num == -1) {  
             break;
-        } else if (num > 0) {  // Faqat musbat sonlarni saqlash
-            arr[z++] = num;  // `z` yordamida massivga yoziladi
-        } else {  // Noto‘g‘ri kiritilgan sonlar uchun
+        } else if (num > 0) { 
+            arr[z++] = num;  
+        } else {  
             printf("n/a\n");
-            return 0; // Dastur tugaydi
+            return 0; 
         }
     }
     for (int i = z - 1; i >= 0; i--) {
